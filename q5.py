@@ -1,6 +1,6 @@
 echo "Honour Code: I hereby certify that I have completed this exam on my own without any help from anyone else. I understand that the only sources of authorized information in this exam are (i) the course textbook, (ii) the material that is posted on Blackboard or on repl.it lecture notes for this class, and (iii) any study notes handwritten by myself. I agree to follow the rules specified in _Rules.md file and cite any unauthorized source in taking this exam. The effort in this exam thus belongs completely to me."
 
-echo "Hüseyin Erhan Göktanır"
+echo "Elif Sude Arısoy"
 
 def print_operation(num1, num2, operation, ret=False):
   """
@@ -27,7 +27,33 @@ def print_operation(num1, num2, operation, ret=False):
     res = a * b
   elif operation == "/":
     res = a / b
+  
+    a, b = float(num1), float(num2)
+  res = 0
+  if operation == "+":
+    res = a + b
+  elif operation == "-":
+    res = a - b
+  elif operation == "*":
+    res = a * b
+  elif operation == "/":
+    res = a / b
+  
+  if not a, b:
+    try:
+      a = int(a)
+      b = int(b)
+      except ZeroDivisionError:
+        print("No number can divided by zero.")
+        return print_operation()
+      
 
+  if ret:
+    return str(res)
+  else:
+    print(str(int(a)) + " " + operation + " " + str(int(b)) + " = " + str(int(res))) 
+  
+  
   if ret:
     return str(res)
   else:
