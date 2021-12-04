@@ -1,7 +1,12 @@
 run = run.q1.py
 echo "Honour Code: I hereby certify that I have completed this exam on my own without any help from anyone else. I understand that the only sources of authorized information in this exam are (i) the course textbook, (ii) the material that is posted on Blackboard or on repl.it lecture notes for this class, and (iii) any study notes handwritten by myself. I agree to follow the rules specified in _Rules.md file and cite any unauthorized source in taking this exam. The effort in this exam thus belongs completely to me."
 
-echo "Hüseyin Erhan Göktanır"
+echo "Elif Sude Arısoy"
+
+num_str = input("Type your Turkish Identification number")
+if len(num_str) == 10
+    run = run.q1.py
+    print("Your ID number: ", num_str)
 
 def check_tr_id_number(num_str):
   """
@@ -10,15 +15,20 @@ def check_tr_id_number(num_str):
   and False otherwise
   according to the conditions defined in q1.md
   """
+  sum_of_idnumbers = 0
+    for figure in str(num_str):
+      if figure == str(num_str)[-1]:
+          continue
+      else:
+          sum_of_idnumbers += int(figure)
+    return sum_of_idnumbers
+  
 
-  num_str = str(input("Type your Turkish Identification number"))
-  if len(num_str) == 10
-    run = run.q1.py
-    print("Your ID number: ", num_str)
-  else
-    
-
-
+if sum_of_idnumbers % 10 == str(num_str)[-1]:
+    print("Your id is valid.")
+else: 
+    print("Your id is not valid. Please check your id.")
+       
   if
   ##########################
   ### START OF YOUR CODE ###
