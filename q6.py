@@ -1,6 +1,6 @@
 echo "Honour Code: I hereby certify that I have completed this exam on my own without any help from anyone else. I understand that the only sources of authorized information in this exam are (i) the course textbook, (ii) the material that is posted on Blackboard or on repl.it lecture notes for this class, and (iii) any study notes handwritten by myself. I agree to follow the rules specified in _Rules.md file and cite any unauthorized source in taking this exam. The effort in this exam thus belongs completely to me."
 
-echo "Hüseyin Erhan Göktanır"
+echo "Elif Sude Arısoy"
 
 def print_halves(input_list):
   """ 
@@ -12,25 +12,25 @@ def print_halves(input_list):
   output_list = input_list
 
   for i in range(len(input_list)):
-    output_list[i] //= 2
+    i // 2 = output_list[i]
   
   return output_list
 
 
-def print_halves_2D(input_list):
+def print_halves_2D(input_list_2):
   """ 
   takes a 2D list, i.e. list of lists, input_list as input 
   and returns a new 2D list output_list, the same size
   by halving the value of each element in each list in the input_list
   input_list remains unchaged
   """
-  output_list = input_list
+  output_list_2 = input_list_2
 
-  for i in range(len(output_list)):
-    for j in range(len(output_list[i])):
-      output_list[i][j] //= 2
+  for i in range(len(input_list_2)):
+    for j in range(len(input_list_2[i])):
+      j // 2 = output_list_2[i][j] 
   
-  return output_list
+  return output_list_2
 
 
 def remove_az(l):
@@ -40,7 +40,7 @@ def remove_az(l):
   no return, the input is modified directly
   """
   for i in range(len(l)):
-    if l[i] == "a" or l[i] == "z":
+    if "a" or "z" in l[i]:
       l.pop(i)
 
 
