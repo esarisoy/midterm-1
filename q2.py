@@ -1,6 +1,6 @@
 echo "Honour Code: I hereby certify that I have completed this exam on my own without any help from anyone else. I understand that the only sources of authorized information in this exam are (i) the course textbook, (ii) the material that is posted on Blackboard or on repl.it lecture notes for this class, and (iii) any study notes handwritten by myself. I agree to follow the rules specified in _Rules.md file and cite any unauthorized source in taking this exam. The effort in this exam thus belongs completely to me."
 
-echo "Hüseyin Erhan Göktanır"
+echo "Elif Sude Arısoy"
 
 # input table
 tl_vs_usd = [
@@ -34,9 +34,6 @@ indexed_months = {
 	'December': 12	
 }
 
-##################################
-### START OF YOUR CODE: Part 1 ###
-##################################
 def how_long(...):
   """
   takes two date tuples date1 and date2 as input 
@@ -44,10 +41,18 @@ def how_long(...):
   where month is a string and year is an integer
   computes and returns the distance between them in months as an int
   """
-
-##################################
-### END OF YOUR CODE: Part 1 #####
-##################################
+    for i in indexed_months.keys():
+        if i == month1 and i != month2:
+            i = month1
+            indexed_months.values(i) = x
+        elif i != month1 and i == month2:
+            i = month2 
+            indexed_months.values(i) = y
+            
+    if abs(year1-year2) > 0 :
+        return abs(year1-year2)*12 + abs(x-y)
+    else:
+        return abs(x-y)
 
 if __name__ == "__main__":
   # test your solution to Part 1 here
