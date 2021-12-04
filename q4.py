@@ -3,34 +3,18 @@ echo "Honour Code: I hereby certify that I have completed this exam on my own wi
 echo "Hüseyin Erhan Göktanır"
 
 def print_s():
-  ##########################
-  ### START OF YOUR CODE ###
-  ##########################
-
-
-  ##########################
-  ###  END OF YOUR CODE  ###
-  ##########################
-  print(s)
-
-  s = "Inside"
-
-  print(s)
-  
+    s = "Inside"
+    
+    for i in range(0,3):
+        print(s)
+        
 def increment_printer(start = 0):
   i = start
 
   def increment():
-    ##########################
-    ### START OF YOUR CODE ###
-    ##########################
-
-
-    ##########################
-    ###  END OF YOUR CODE  ###
-    ##########################
-    i += 1
-    print(i)
+      for i in range(5):
+          i += 1
+          print(i)
 
   return increment
 
