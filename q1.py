@@ -4,10 +4,20 @@ echo "Honour Code: I hereby certify that I have completed this exam on my own wi
 echo "Elif Sude Arısoy"
 
 num_str = input("Type your Turkish Identification number")
-if len(num_str) == 10
-    run = run.q1.py
-    print("Your ID number: ", num_str)
 
+#BONUS PART
+
+if len(num_str) != 11:
+    num_str = input("Type your Turkish Identification number")
+else:
+    break
+for i in range(len(str(num_str))):
+    if i not int:
+        num_str = input("Type your Turkish Identification number")
+    else:
+        break
+
+ 
 def check_tr_id_number(num_str):
   """
   num_str: an 11-digit ID as input
@@ -28,17 +38,7 @@ if sum_of_idnumbers % 10 == str(num_str)[-1]:
     print("Your id is valid.")
 else: 
     print("Your id is not valid. Please check your id.")
-       
-  if
-  ##########################
-  ### START OF YOUR CODE ###
-  ##########################
 
-  pass
-
-  ##########################
-  ###  END OF YOUR CODE  ###
-  ##########################
 
 if __name__ == "__main__":
   # test your solution here
